@@ -30,5 +30,20 @@ public class todo1{
         list1.remove(0);
         return temp;
     }
+        //Given an array, index, and additional value, insert the value into array at given index.
+    //Do this without using built-in array methods.
+    //You can think of pushFront(arr,val) as equivalent to insertAt(arr,0,val).
+    public void insert(ArrayList<Integer> list1, int index, int value){
+        list1.add(index, value);
+        System.out.println(list1);
+    }
+    //Given an array and an index into array, remove and return the array value at that index.
+    //Do this without using built-in array methods except pop().
+    //Think of popFront(arr) as equivalent to removeAt(arr,0).
+    public int remove2(ArrayList<Integer> list1, int index){
+        int temp = list1.get(index);
+        list1.remove(index);
+        return temp;
+    }
 
 }
