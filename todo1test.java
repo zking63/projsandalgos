@@ -12,10 +12,10 @@ public class todo1test {
         for (int i = 0; i < 5; i++){
             list.add(i);
         }
-        list.add(3, 2);
         result.remove1(list);
         result.insert(list, 3, 0);
         result.remove2(list,3);
+        list.add(3, 2);
         result.dupes(list);
     }
 }
