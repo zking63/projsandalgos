@@ -23,5 +23,12 @@ public class todo1{
         }
         System.out.println(list);
     }
-  
+    //Given an array, remove and return the value at the beginning of the array.
+    //Do this without using any built-in array methods except pop().
+    public int remove1(ArrayList<Integer> list1){
+        int temp = list1.get(0);
+        list1.remove(0);
+        return temp;
+    }
+
 }
