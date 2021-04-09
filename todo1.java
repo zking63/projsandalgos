@@ -30,7 +30,7 @@ public class todo1{
         list1.remove(0);
         return temp;
     }
-        //Given an array, index, and additional value, insert the value into array at given index.
+    //Given an array, index, and additional value, insert the value into array at given index.
     //Do this without using built-in array methods.
     //You can think of pushFront(arr,val) as equivalent to insertAt(arr,0,val).
     public void insert(ArrayList<Integer> list1, int index, int value){
@@ -45,5 +45,13 @@ public class todo1{
         list1.remove(index);
         return temp;
     }
-
+    //remove duplicates that are next to each other
+    public void dupes(ArrayList<Integer> list1){
+        for (int i = 0; i < list1.size() -1; i++){
+            if (list1.get(i) == list1.get(i + 1)){
+                list1.remove(i + 1);
+            } 
+        }
+        System.out.println(list1);
+    }
 }
