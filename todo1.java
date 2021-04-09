@@ -11,5 +11,17 @@ public class todo1{
         }
         System.out.println(list);
     }
-
+    //If length is odd, do not change the final element.
+    //For [1,2,3,4], return [2,1,4,3]. For example, change input ["Brendan",true,42]
+    //to [true,"Brendan",42]. As with all array challenges
+    //do this without using any built-in array methods.
+    public void swap(int Array2[]){
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < (Array2.length -1); i += 2){
+            list.add(Array2[i + 1]);
+            list.add(Array2[i]);
+        }
+        System.out.println(list);
+    }
+  
 }
