@@ -32,6 +32,18 @@ function getAcronym(string1){
     }
     console.log(new1)
 }
+//count non-space digits or characters
+function getNonSpace(string1){
+    var string2 = string1.trim();
+    var count = 0
+    for (var i = 0; i <string2.length; i++){
+        if (string2[i] != " "){
+            count++
+        }
+    }
+    console.log(count)
+}
+getNonSpace("ok now ")
 getAcronym("ok now work")
 getDigits("1w4r5uu8")
 myTrim(" Pl ayTha tF u nkyM usi c ")
