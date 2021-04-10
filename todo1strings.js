@@ -21,5 +21,17 @@ function getDigits(str){
     }
     console.log(newp)
 }
+//return string's acronym
+function getAcronym(string1){
+    var string2 = string1.trim();
+    var new1 = string2[0]
+    for (var i = 0; i <string2.length; i++){
+        if (string2[i -1] == " "){
+            new1 = new1 + string1[i]
+        }
+    }
+    console.log(new1)
+}
+getAcronym("ok now work")
 getDigits("1w4r5uu8")
 myTrim(" Pl ayTha tF u nkyM usi c ")
