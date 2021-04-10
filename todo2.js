@@ -15,7 +15,6 @@ console.log(newArr);
 function rotate(arr, shift) {
 	let t = Math.abs(shift);
 	while(t > 0) {
-
 		if(shift > 0) {
 			let temp = arr[arr.length-1]
 			
@@ -35,3 +34,16 @@ function rotate(arr, shift) {
     console.log(arr);
 }
 rotate([1,2,3], -2)
+
+//recreate javascript's concat
+function myConcat(arr2, arr3) {
+    var newA = [];
+	for(var i = 0; i < arr2.length; i++) {
+        newA[i] = arr2[i];
+    }
+    for(var j=0; j<arr3.length;j++){
+        newA[j+arr2.length]=arr3[j];
+    }
+    console.log(newA)
+}
+myConcat([1,2,0,3],[3,2,1,0])
