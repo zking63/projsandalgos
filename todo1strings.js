@@ -43,6 +43,16 @@ function getNonSpace(string1){
     }
     console.log(count)
 }
+//remove any string in string array that is shorter than a given value
+function removal(arr4){
+    for (var i = 0; i <arr4.length; i++){
+        if (arr4[i].length < arr4.length){
+            delete arr4[i]
+        }
+    }
+    console.log(arr4)
+}
+removal (["ok","work","now"])
 getNonSpace("ok now ")
 getAcronym("ok now work")
 getDigits("1w4r5uu8")
