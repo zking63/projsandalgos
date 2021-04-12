@@ -104,4 +104,21 @@ public class SLL{
         System.out.println(max.data);
         return max;
     }
+    //create a function that returns the minimum
+    public Node min(){
+        Node current = head;
+        Node min = head;
+        if (head == null){
+            System.out.println("the linked list does not exist");
+            return null;
+        }
+        while (current != null){
+            if (current.data < min.data){
+                min = current;
+            }
+            current = current.next;
+        }
+        System.out.println(min.data);
+        return min;
+    }
 }

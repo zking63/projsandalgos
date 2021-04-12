@@ -10,5 +10,6 @@ public class fronttest{
         System.out.println(result.length());
         result.display();
         result.max();
+        result.min();
     }
 }
