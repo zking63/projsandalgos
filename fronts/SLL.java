@@ -121,4 +121,22 @@ public class SLL{
         System.out.println(min.data);
         return min;
     }
+    //Create average() to return average
+    public Double average(){
+        Node current = head;
+        int counter = 0;
+        Double average = 0.0;
+        if (head == null){
+            System.out.println("the linked list does not exist");
+            return null;
+        }
+        while (current != null){
+            counter++;
+            average = current.data + average;
+            current = current.next;
+        }
+        average = average/counter;
+        System.out.println(average);
+        return average;
+    }
 }

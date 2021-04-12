@@ -11,5 +11,6 @@ public class fronttest{
         result.display();
         result.max();
         result.min();
+        result.average();
     }
 }
