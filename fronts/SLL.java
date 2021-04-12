@@ -7,8 +7,8 @@ public class SLL{
         this.data = data;
         this.next = null;
     }
-    //add a node
-    public void addNode(int data){
+    //add a head
+    public Node addHead(int data){
         Node newNode = new Node(data);
         if (head == null){
             head = newNode;
@@ -18,9 +18,14 @@ public class SLL{
             tail.next = newNode;
             tail = newNode;
         }
-        int headint = head.data;
-        int tailint = tail.data;
-        System.out.println(headint);
-        System.out.println(tailint);
+        return head;
+    }
+    //get values of nodes
+    public Integer getHeadValue(Node head){
+        Integer headint = null;
+        if (head != null){
+            headint = head.data;
+        }
+        return headint;
     }
 }

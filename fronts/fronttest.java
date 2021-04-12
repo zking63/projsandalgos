@@ -2,6 +2,6 @@ public class fronttest{
     public static void main(String[] args){
         SLL result = new SLL();
 
-        result.addNode(88);
+        System.out.println(result.getHeadValue(result.addHead(88)));
     }
 }
