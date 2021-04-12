@@ -54,4 +54,15 @@ public class SLL{
         }
         return currentint;
     }
+    //see if your list contains a value
+    public boolean contains(int value){
+        Node current = head;
+        while (current != null){
+            if (current.data == value){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
 }
