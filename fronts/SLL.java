@@ -65,4 +65,14 @@ public class SLL{
         }
         return false;
     }
+    //create a method that returns the number of nodes in the list
+    public int length(){
+        int counter = 0;
+        Node current = head;
+        while (current != null){
+            counter++;
+            current = current.next;
+        }
+        return counter;
+    }
 }
