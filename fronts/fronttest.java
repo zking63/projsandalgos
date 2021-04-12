@@ -8,5 +8,6 @@ public class fronttest{
         System.out.println(result.contains(99));
         System.out.println(result.contains(98));
         System.out.println(result.length());
+        result.display();
     }
 }

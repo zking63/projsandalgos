@@ -75,4 +75,16 @@ public class SLL{
         }
         return counter;
     }
+    //Create display() that returns a string containing all list values
+    public void display(){
+        Node current = head;
+        if (head == null){
+            System.out.println("the linked list does not exist");
+        }
+        while (current != null){
+            System.out.print(current.data);
+            current = current.next;
+        }
+        System.out.println();
+    }
 }
