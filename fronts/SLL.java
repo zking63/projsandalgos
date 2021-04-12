@@ -87,4 +87,21 @@ public class SLL{
         }
         System.out.println();
     }
+    //Create method max() to return list’s largest val
+    public Node max(){
+        Node current = head;
+        Node max = head;
+        if (head == null){
+            System.out.println("the linked list does not exist");
+            return null;
+        }
+        while (current != null){
+            if (current.data > max.data){
+                max = current;
+            }
+            current = current.next;
+        }
+        System.out.println(max.data);
+        return max;
+    }
 }
