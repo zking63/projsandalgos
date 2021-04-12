@@ -3,5 +3,7 @@ public class fronttest{
         SLL result = new SLL();
 
         System.out.println(result.getHeadValue(result.addHead(88)));
+        System.out.println(result.addNode(99));
+        System.out.println(result.getNodeValue());
     }
 }
