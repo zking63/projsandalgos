@@ -11,11 +11,12 @@ function countUp(number){
 //If not an integer, truncate. Experts tell us 0! is 1. rFact(3) = 6 (1*2*3). 
 //Also, rFact(6.5) = 720 (1*2*3*4*5*6).
 function getproduct(number){
+    var finalN = Math.round(number)
     var product = 1;
-    for (var i = 1; i < number +1; i++){
+    for (var i = 1; i < finalN +1; i++){
         product = product * i;
     }
     console.log(product);
 }
 countUp(3)
-getproduct(3)
+getproduct(3.5)
