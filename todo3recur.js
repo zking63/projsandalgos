@@ -13,6 +13,7 @@ function rBinarySearch(numbers, value){
 function rGCF(value1, value2){
     var max = 0;
     var min = 0;
+    var gcf = 0;
     if (value1 > value2){
         max = value1;
         min = value2;
@@ -21,12 +22,13 @@ function rGCF(value1, value2){
         max = value2;
         min = value1;
     }
-    /*for (var i = max; i < max; i--){
-        if (value == numbers[i]){
-            return "true";
+    for (var i = min; i > 0; i--){
+        while (min % i != 0 || max % i != 0){
+            i--;
         }
+        gcf = i;
     }
-    return "false";*/
+    return gcf
 }
-rGCF(5, 6);
+console.log(rGCF(5, 6));
 console.log(rBinarySearch([1,4,5,6],4))
