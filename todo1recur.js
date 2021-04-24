@@ -20,3 +20,4 @@ function getproduct(number){
 }
 countUp(3)
 getproduct(3.5)
+getproduct(0)
