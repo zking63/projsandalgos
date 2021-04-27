@@ -9,5 +9,7 @@ class BST {
     constructor() {
         this.root = null;
     }
-    // add methods here...
+   function add(){
+       
+   }
 }
