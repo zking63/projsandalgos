@@ -37,3 +37,4 @@ class BST {
 }
 //create tree
 tree = new BST();
+tree.add(2);
