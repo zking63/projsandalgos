@@ -86,8 +86,13 @@ class BST {
         }
         return sizer(this.root);
     }
+    isEmpty() {
+        if(this.root) {
+            return false
+        }
+        return true
+    }
 }
-//create tree
 tree = new BST();
 tree.add(2);
 tree.add(3);
@@ -98,3 +103,4 @@ console.log(tree.contains(7));
 console.log(tree.min());
 console.log(tree.max());
 console.log(tree.size());
+console.log(tree.isEmpty())
