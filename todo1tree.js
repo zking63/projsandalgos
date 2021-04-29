@@ -1,4 +1,4 @@
-class BTNode {
+class Node {
     constructor(value) {
         this.val = value;
         this.left = null;
@@ -9,7 +9,7 @@ class BST {
     constructor() {
         this.root = null;
     }
-   function add(value){
+   add(value){
        if(this.root){
            var runner = this.root
            if(value > runner.value){
@@ -38,3 +38,4 @@ class BST {
 //create tree
 tree = new BST();
 tree.add(2);
+console.log(tree.add(3));
