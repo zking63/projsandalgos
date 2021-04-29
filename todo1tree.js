@@ -52,6 +52,17 @@ class BST {
        }
        return false
    }
+   min() {
+        var runner = this.root;
+        var min = this.root.value;
+        while(runner.left) {
+            if(runner.left.value < min) {
+                min = runner.left.value;
+            }
+            runner = runner.left;
+        }
+        return min
+    }
 }
 //create tree
 tree = new BST();
@@ -61,3 +72,4 @@ tree.add(4);
 tree.add(1);
 console.log(tree.add(5));
 console.log(tree.contains(7));
+console.log(tree.min());
