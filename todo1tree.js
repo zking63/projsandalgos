@@ -63,6 +63,17 @@ class BST {
         }
         return min
     }
+    max() {
+        var runner = this.root;
+        var max = this.root.value;
+        while(runner.right) {
+            if(runner.right.value > max) {
+                max = runner.right.value;
+            }
+            runner = runner.right;
+        }
+        return max
+    }
 }
 //create tree
 tree = new BST();
@@ -73,3 +84,4 @@ tree.add(1);
 console.log(tree.add(5));
 console.log(tree.contains(7));
 console.log(tree.min());
+console.log(tree.max());
