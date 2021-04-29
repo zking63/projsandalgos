@@ -35,3 +35,5 @@ class BST {
        return this
    }
 }
+//create tree
+tree = new BST();
