@@ -1,6 +1,6 @@
 //create a function that determines whether a stirng is a palindrome or not
 //do not ignore, spaces, capitals, etc. 
-
+//this is O(n)
 function palindrome(input){
     var input2 = 0;
     for (var i = input.length -1; i >= 0; i--){
