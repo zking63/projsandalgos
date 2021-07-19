@@ -4,9 +4,9 @@
 function palindrome(input){
     var input1 = input;
     var input2;
-    for (var char of input){
-        console.log(char);
+    console.log(input.length);
+    for (var i = input.length -1; i >= 0; i--){
+        console.log(input[i]);
     }
 }
-
 palindrome("string")
