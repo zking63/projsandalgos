@@ -2,11 +2,16 @@
 //do not ignore, spaces, capitals, etc. 
 
 function palindrome(input){
-    var input1 = input;
-    var input2;
-    console.log(input.length);
+    var input2 = 0;
     for (var i = input.length -1; i >= 0; i--){
-        console.log(input[i]);
+        if (input2 == 0){
+            input2 = input[i];
+        }
+        else {
+            input2 += input[i];
+        }
     }
+    return Boolean(input2 == input);
 }
-palindrome("string")
+console.log(palindrome("racecar"))
+console.log(palindrome("rac ecar"))
