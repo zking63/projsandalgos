@@ -1,5 +1,6 @@
 //create an function that, given an input string, 
 //returns a boolean whether parenthesis in that string are valid
+//this is O(n)
 var input = "(y(((9)1)"
 function Parens(input){
     var p1count = 0;
